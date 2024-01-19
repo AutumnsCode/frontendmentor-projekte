@@ -1,0 +1,22 @@
+$-ff-sans: "Inter", sans-serif;
+$ff-base: $-ff-sans;
+
+$font-sizes: (
+  "default": (
+    900: 1.5rem,
+    400: 0.875rem,
+    300: 0.84375rem
+  )
+);
+
+$fs-300: var(--fs-300);
+$fs-400: var(--fs-400);
+$fs-900: var(--fs-900);
+
+$-fw-default: 400;
+$-fw-semibold: 600;
+$-fw-bold: 700;
+
+$fw-default: $-fw-default;
+$fw-semibold: $-fw-semibold;
+$fw-bold: $-fw-bold;
