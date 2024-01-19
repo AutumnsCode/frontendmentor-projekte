@@ -1,9 +1,8 @@
-@use '../abstract' as *;
+@use 'color' as *;
 
 :root {
   @each $color, $value in $default {
     --#{$color}: #{$value};
   }
-
-  
 }
+
