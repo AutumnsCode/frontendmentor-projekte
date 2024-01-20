@@ -1,0 +1,55 @@
+@use '../abstract' as *;
+
+.card {
+  background-color: $clr-primary;
+  border-radius: $size-5;
+  padding: $size-12;
+  width: 100%;
+
+
+  &__header {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+    &-avatar {
+      width: 5.75rem;
+      aspect-ratio: 1;
+      margin-inline: auto;
+      border-radius: 50%;
+      overflow: clip;
+    }
+
+    &-title {
+      font-weight: $font-weight-semi-bold;
+      > h1 {
+        font-size: $size-12;
+        line-height: 1.1;
+      }
+
+      > .card__header-location {
+        color: $clr-accent;
+      }
+    }
+  }
+
+  &__main {
+    text-align: center;
+
+    &-link {
+      padding: $size-6;
+      font-weight: $font-weight-bold;
+      background-color: $clr-secondary;
+      border-radius: $size-4;
+      cursor: pointer;
+      
+      &:hover, &:focus {
+        background: $clr-accent;
+        a {
+          color: $clr-secondary;
+        }
+      }
+    }
+  }
+}

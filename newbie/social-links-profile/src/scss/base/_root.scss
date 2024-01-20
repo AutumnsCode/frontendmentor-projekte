@@ -1,15 +1,14 @@
 @use '../abstract' as *;
 
 :root {
-  @each $color, $value in $active-theme {
-    --#{$color}: #{$value};
-  }
 
-  @if ($enable-mq-dark-mode) {
-    @media (prefers-color-scheme: dark) {
-      @each $color, $value in $dark {
-        --#{$color}: #{$value};
-      }
+  @if ($enable-mq-light-mode) {
+    @each $color, $value in $light {
+      --#{$color}: #{$value};
+    }
+  } @else {
+    @each $color, $value in $active-theme {
+      --#{$color}: #{$value};
     }
   }
 

@@ -3,22 +3,29 @@
 //   $-clr-clrname: val
 
 $-clr-white: hsl(0 0% 100%);
-$-clr-gray: hsl(0 0% 50%);
-$-clr-black: hsl(0 0% 0%);
+$-clr-gray: hsl(0 0% 20%);
+$-clr-dark-gray: hsl(0 0% 12%);
+$-clr-black: hsl(0 0% 8%);
+$-clr-green: hsl(75 94% 57%);
 
 
 $default: (
-  "primary": $-clr-white,
-  "secondary": $-clr-gray,
-  "base": $-clr-black,
-);
-
-$dark: (
-  "primary": $-clr-black,
+  "background": $-clr-black,
+  "primary": $-clr-dark-gray,
   "secondary": $-clr-gray,
   "base": $-clr-white,
+  "accent": $-clr-green,
 );
 
+$light: (
+  "background": $-clr-white,
+  "primary": $-clr-dark-gray,
+  "secondary": $-clr-gray,
+  "base": $-clr-black,
+  "accent": $-clr-green,
+);
+$clr-background: var(--background);
 $clr-primary: var(--primary);
 $clr-secondary: var(--secondary);
 $clr-base: var(--base);
+$clr-accent: var(--accent);
