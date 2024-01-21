@@ -5,4 +5,5 @@
   align-items: center;
   justify-content: center;
   gap: var(--flex-gap, $flex-gap);
+  flex-direction: column;
 }

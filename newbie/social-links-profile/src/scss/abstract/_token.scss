@@ -10,14 +10,20 @@ $active-theme: $default;
 $clr-text-default: $clr-base;
 $clr-bg-default: $clr-background;
 $clr-interactive-text-default: $clr-base;
-$clr-interactive-text-hover: $clr-base;
+$clr-interactive-text-hover: $clr-secondary;
+$clr-interactive-bg-hover: $clr-accent;
+$clr-interactive-bg: $clr-secondary;
 
 // set to 0 to disable
 $letter-spacing-loose:0;
 
 // border-radius
 $border-radius-1: $size-4;
-$border-radius-2: $size-8;
+$border-radius-2: $size-5;
+
+// box-shadow
+$box-shadow-1:1px 4px 5px rgba(0, 0, 0, 0.3);
+$box-shadow-2: 12px 10px 5px rgba(0, 0, 0, 0.1);
 
 // body
 $body-ff: $font-family-base;
@@ -29,6 +35,8 @@ $body-bg-color: $clr-bg-default;
 
 $link-color: $clr-interactive-text-default;
 $link-color-hover: $clr-interactive-text-hover;
+$link-background-hover: $clr-interactive-bg-hover;
+$link-background: $clr-interactive-bg;
 
 // layout
 $grid-gap: $size-8;
@@ -46,6 +54,20 @@ $breakout-max-width-narrow: 50rem;
 $content-max-width-wide: 85rem;
 
 $card-bg-default: $clr-primary;
-$card-padding: $size-12;
-
-$flow-gap: $size-8;
+$card-padding-extra-small: $size-6;
+$card-padding-small: $size-8;
+$card-padding-default: $size-12;
+$card-padding-medium: $size-14;
+$card-padding-large: $size-20;
+$card-shadow: $box-shadow-2;
+$card-title: $font-size-900;
+$card-location: $link-background-hover;
+$card-fw-semi-bold: $font-weight-semi-bold;
+$card-fw-bold: $font-weight-bold;
+$card-link-bg: $clr-interactive-bg;
+$card-link-bg-hover: $clr-interactive-bg-hover;
+$card-radius-1: $border-radius-1;
+$card-radius-2: $border-radius-2;
+$card-link-color: $link-color;
+$card-link-color-hover: $link-color-hover;
+$card-link-shadow: $box-shadow-1;

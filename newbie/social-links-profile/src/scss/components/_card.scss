@@ -1,17 +1,28 @@
 @use '../abstract' as *;
 
 .card {
-  background-color: $clr-primary;
-  border-radius: $size-5;
-  padding: $size-12;
-  width: 100%;
+  background-color: $card-bg-default;
+  border-radius: $card-radius-2;
+  padding: $card-padding-default;
+  box-shadow: $card-shadow;
 
+  @include mq(small) {
+    padding: $card-padding-large;
+  }
+
+  > *:where(:not(:first-child)) {
+    margin-top: $card-padding-default;
+  }
 
   &__header {
     width: 100%;
     display: grid;
     justify-content: center;
     text-align: center;
+
+    > *:where(:not(:first-child)) {
+      margin-top: $card-padding-medium;
+    }
 
     &-avatar {
       width: 5.75rem;
@@ -22,14 +33,14 @@
     }
 
     &-title {
-      font-weight: $font-weight-semi-bold;
+      font-weight: $card-fw-semi-bold;
       > h1 {
-        font-size: $size-12;
+        font-size: $card-title;
         line-height: 1.1;
       }
 
       > .card__header-location {
-        color: $clr-accent;
+        color: $card-location;
       }
     }
   }
@@ -37,19 +48,33 @@
   &__main {
     text-align: center;
 
+    > ul > *:where(:not(:first-child)) {
+      margin-top: $card-padding-extra-small;
+
+      @include mq(small) {
+        margin-top: $card-padding-small;
+      }
+    }
     &-link {
-      padding: $size-6;
-      font-weight: $font-weight-bold;
-      background-color: $clr-secondary;
-      border-radius: $size-4;
+      display: block;
+      padding: $card-padding-extra-small;
+      font-weight: $card-fw-bold;
+      background-color: $card-link-bg;
+      border-radius: $card-radius-1;
       cursor: pointer;
+      transition: all 0.5 ease-in-out;
+      color: $card-link-color;
+      letter-spacing: 0;
+
       
       &:hover, &:focus {
-        background: $clr-accent;
-        a {
-          color: $clr-secondary;
-        }
+        color: $card-link-color-hover;
+        background: $card-link-bg-hover;
+        box-shadow: card-link-shadow;
+        letter-spacing: 1px;
+        transition: all 0.5 ease-in-out;
       }
     }
   }
 }
+

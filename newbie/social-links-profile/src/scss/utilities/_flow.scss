@@ -1,6 +1,0 @@
-@use '../abstract/' as *;
-
-.flow > *:where(:not(:first-child)) {
-  --flow-space: $size-8;
-    margin-top: var(--flow-space, $flow-gap);
-}

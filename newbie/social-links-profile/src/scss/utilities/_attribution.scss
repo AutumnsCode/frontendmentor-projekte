@@ -1,0 +1,16 @@
+@use '../abstract' as *;
+
+.attribution {
+  position: absolute;
+  max-width: calc(100% - $size-16);
+  left: 0.15rem;
+  bottom: 1rem;
+  margin-inline: auto;
+  a {
+    color: $link-color;
+
+    &:hover,&:focus {
+      color: $link-background-hover;
+    }
+  }
+}

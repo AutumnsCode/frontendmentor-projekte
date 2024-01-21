@@ -8,11 +8,3 @@ body {
   font-family: $body-ff;
   font-size: $body-fz;
 }
-
-a {
-  color: $link-color;
-}
-
-a:is(:hover, :focus) {
-  color: $link-color-hover;
-}
