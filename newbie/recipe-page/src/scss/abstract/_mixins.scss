@@ -1,0 +1,23 @@
+@use "sass:meta";
+@use "sass:math";
+@use "sass:map";
+@use 'breakpoints' as *;
+
+@mixin mq($size) {
+  @if map-has-key($breakpoints, $size) {
+    $breakpoint: map-get($breakpoints, $size);
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  } @else if meta.type-of($size) {
+    @if math.is-unitless($size) {
+      @error("Always add a unit in the end.");
+    } @else {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  } @else {
+    @error("The input isnt a breakpoint");
+  }
+}
