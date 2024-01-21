@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Link](https://github.com/AutumnsCode/frontendmentor-projekte/tree/main/newbie/social-links-profile)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live](https://admirable-dodol-2fc408.netlify.app)
 
 ## My process
 
