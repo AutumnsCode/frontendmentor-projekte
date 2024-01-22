@@ -1,18 +1,18 @@
 @use '../abstract' as *;
 
 .card {
-  background-color: $clr-bg-card;
-  margin-block: $size-40;
-  border-radius: $size-18;
-  box-shadow: $size-6 $size-6 0 0 $clr-base;
-  border: 1px solid $clr-base;
+  background-color: $card-background;
+  margin-block: $card-margin-block;
+  border-radius: $card-radius-large;
+  box-shadow: $card-box-shadow;
+  border: $card-border;
   @include display(grid, $size-12);
-  @include container(24rem, $size-12, $size-11);
+  @include container($card-max-width, $size-12, $size-11);
 
   &__header {
     img {
-      border-radius: 10px;
-      max-height: 12.5rem;
+      border-radius: $card-radius-medium;
+      max-height: $card-image-height;
       object-fit: cover;
       overflow: clip;
     }
@@ -21,33 +21,24 @@
     @include display(grid, $size-6);
 
     &-label {
-      color: $clr-base;
+      color: $card-color-title;
       padding: $size-2 $size-6;
-      background: $body-bg-color;
+      background: $card-accent;
       width: fit-content;
-      font-weight: 800;
+      font-weight: $card-fontweight-bold;
       border-radius: $size-2;
-      font-size: 12px;
+      font-size: $card-fz-xs;
     }
 
     &-publish {
-      font-size: 12px;
+      font-size: $card-fz-xs;
     }
 
     h1 {
-      font-size: 22px;
-      color: $clr-base;
+      font-size: $card-fz-large;
       line-height: 1;
-      font-weight: 800;
+      font-weight: $card-fontweight-bold;
       cursor:pointer;
-
-      a {
-        text-decoration: none;
-
-        &:hover, &:focus {
-          color: $clr-background;
-        }
-      }
     }
   }
 
@@ -55,12 +46,13 @@
     @include display-direction(flex, $size-6, start, center);
 
     img {
-      height: $size-16;
+      height: $card-avatar;
     }
 
     h2 {
-      font-size: 12px;
-      font-weight: 800;
+      font-size: $card-fz-s;
+      font-weight: $card-fontweight-bold;
+      color: $card-color-title;
     }
   }
 }
