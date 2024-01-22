@@ -1,18 +1,54 @@
 @use '../abstract' as *;
 
 body {
-  background-color: $body-bg-color;
   color: $body-text-color;
   line-height: $body-line-height;
   font-weight: $body-fw;
   font-family: $body-ff;
   font-size: $body-fz;
+
+  @include mq(small) {
+    background-color: $clr-neutral-300;
+  }
 }
 
-a {
-  color: $link-color;
+main {
+  @include mq(small) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-a:is(:hover, :focus) {
-  color: $link-color-hover;
+ul, ol {
+  margin-block: 0;
+  padding: 0;
+  margin-left: $size-10;
+  color: $clr-primary-100;
+  
+  > li {
+      padding-left: $size-14;
+              
+      &:not(:last-child) {
+        margin-bottom: $size-4;
+      }
+    
+      > span {
+        color: $clr-neutral-500;
+
+        &:first-child {
+          font-weight: $font-weight-bold;
+        }
+      }
+      
+  }
+  
 }
+
+// a {
+//   color: $link-color;
+// }
+
+// a:is(:hover, :focus) {
+//   color: $link-color-hover;
+// }

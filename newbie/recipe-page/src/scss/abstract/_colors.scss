@@ -1,24 +1,38 @@
 
 // To add color follow the example below:
 //   $-clr-clrname: val
+$-clr-nutmeg: hsl(14 45% 36%); // section title , dots and number
+$-clr-dark-raspberry: hsl(332 51% 32%); // prepation title
+$-clr-white: hsl(0 0% 100%); // card background
+$-clr-rose-white: hsl(330 100% 98%); // Prepation box
+$-clr-eggshell: hsl(30 54% 90%); // background 
 
-$-clr-white: hsl(0 0% 100%);
-$-clr-gray: hsl(0 0% 50%);
-$-clr-black: hsl(0 0% 0%);
+$-clr-light-gray: hsl(30 18% 87%); // section line
+$-clr-wenge-brown: hsl(30 10% 34%); // base
+$-clr-dark-charcoal: hsl(24 5% 18%); // span and h1
 
 
 $default: (
-  "primary": $-clr-white,
-  "secondary": $-clr-gray,
-  "base": $-clr-black,
+  "neutral": (
+    100: $-clr-white,
+    200: $-clr-rose-white,
+    300: $-clr-eggshell,
+    400: $-clr-light-gray,
+    500: $-clr-wenge-brown,
+    600: $-clr-dark-charcoal
+  ),
+  "primary": (
+    100: $-clr-nutmeg,
+    200: $-clr-dark-raspberry,
+  )
 );
 
-$dark: (
-  "primary": $-clr-black,
-  "secondary": $-clr-gray,
-  "base": $-clr-white,
-);
 
-$clr-primary: var(--primary);
-$clr-secondary: var(--secondary);
-$clr-base: var(--base);
+$clr-primary-100: var(--primary-100);
+$clr-primary-200: var(--primary-200);
+$clr-neutral-100: var(--neutral-100);
+$clr-neutral-200: var(--neutral-200);
+$clr-neutral-300: var(--neutral-300);
+$clr-neutral-400: var(--neutral-400);
+$clr-neutral-500: var(--neutral-500);
+$clr-neutral-600: var(--neutral-600);

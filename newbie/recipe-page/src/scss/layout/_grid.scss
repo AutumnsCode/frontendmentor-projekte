@@ -1,0 +1,13 @@
+@use '../abstract' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  > * {
+    padding-bottom: 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $clr-line;
+    }
+  }
+}

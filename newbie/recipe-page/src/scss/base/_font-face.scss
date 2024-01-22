@@ -1,2 +1,42 @@
 //here it comes all the fonts-face
 // generate woff2, woff file at https://www.fontsquirrel.com/tools/webfont-generator
+
+@font-face {
+  font-family: 'Outfit';
+  src: 
+      url('/assets/fonts/Outfit-Regular.woff2') format('woff2'),    
+      url('/assets/fonts/Outfit-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: 
+  u   rl('/assets/fonts/Outfit-SemiBold.woff2') format('woff2'),    
+      url('/assets/fonts/Outfit-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src:    
+      url('/assets/fonts/Outfit-Bold.woff2') format('woff2'),    
+      url('/assets/fonts/Outfit-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src:
+    url('/assets/fonts/YoungSerif-Regular.woff2')
+    url('/assets/fonts/YoungSerif-Regular.woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
