@@ -21,3 +21,21 @@
     @error("The input isnt a breakpoint");
   }
 }
+
+@mixin display($display, $gap) {
+  display: $display;
+  gap: $gap;
+}
+
+@mixin display-direction($display, $gap, $x-achse, $y-achse) {
+  display: $display;
+  gap: $gap;
+  align-items: $y-achse;
+  justify-content: $x-achse;
+}
+
+@mixin container($max-width, $margin-inline, $padding) {
+  margin-inline: auto;
+  width: min(100% - calc(2 * $margin-inline), $max-width);
+  padding: $padding;
+}

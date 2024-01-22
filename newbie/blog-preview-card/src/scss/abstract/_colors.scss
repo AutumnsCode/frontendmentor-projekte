@@ -1,13 +1,14 @@
 
 // To add color follow the example below:
 //   $-clr-clrname: val
-
+$-clr-yellow: hsl(47 88% 63%);
 $-clr-white: hsl(0 0% 100%);
 $-clr-gray: hsl(0 0% 50%);
-$-clr-black: hsl(0 0% 0%);
+$-clr-black: hsl(0 0% 7%);
 
 
 $default: (
+  "background": $-clr-yellow,
   "primary": $-clr-white,
   "secondary": $-clr-gray,
   "base": $-clr-black,
@@ -19,6 +20,7 @@ $dark: (
   "base": $-clr-white,
 );
 
+$clr-background:var(--background);
 $clr-primary: var(--primary);
 $clr-secondary: var(--secondary);
 $clr-base: var(--base);

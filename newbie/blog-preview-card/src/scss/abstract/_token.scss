@@ -8,7 +8,8 @@ $active-theme: $default;
 
 // Contextual
 $clr-text-default: $clr-base;
-$clr-bg-default: $clr-primary;
+$clr-bg-default: $clr-background;
+$clr-bg-card: $clr-primary;
 $clr-interactive-text-default: $clr-base;
 $clr-interactive-text-hover: $clr-base;
 
@@ -24,7 +25,7 @@ $body-ff: $font-family-base;
 $body-fz: $font-size-400;
 $body-line-height: 1.5;
 $body-fw: $font-weight-default;
-$body-text-color: $clr-text-default;
+$body-text-color: $clr-secondary;
 $body-bg-color: $clr-bg-default;
 
 $link-color: $clr-interactive-text-default;
@@ -35,14 +36,6 @@ $grid-gap: $size-8;
 $flex-gap: $size-8;
 
 $container-min-margin-inline: $size-8;
-$container-max-width: 64rem;
-$container-max-width-narrow: 40rem;
-$container-max-width-wide: 75rem;
 
-$content-max-width: 64rem;
-$content-max-width-narrow: 40rem;
-$content-max-width-wide: 75rem;
 
-$breakout-max-width: 70rem;
-$breakout-max-width-narrow: 50rem;
-$content-max-width-wide: 85rem;
+$card-background: $clr-bg-card;

@@ -1,2 +1,11 @@
 //here it comes all the fonts-face
 // generate woff2, woff file at https://www.fontsquirrel.com/tools/webfont-generator
+
+@font-face {
+  font-family: 'Figtree';
+  src: url("/assets/fonts/Figtree-VariableFont_wght.ttf") format("ttf");
+  font-display: swap;
+  font-weight: 600, 800;
+  font-style: normal;
+}
+
