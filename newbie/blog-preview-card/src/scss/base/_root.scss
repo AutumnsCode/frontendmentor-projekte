@@ -1,0 +1,29 @@
+@use '../abstract' as *;
+
+:root {
+  @each $color, $value in $active-theme {
+    --#{$color}: #{$value};
+  }
+
+  @if ($enable-mq-dark-mode) {
+    @media (prefers-color-scheme: dark) {
+      @each $color, $value in $dark {
+        --#{$color}: #{$value};
+      }
+    }
+  }
+
+  @each $screen-size, $size-map in $font-sizes {
+    @if $screen-size == small {
+      @each $size-name, $size-value in $size-map {
+        --fs-#{$size-name}: #{$size-value};
+      }
+    } @else {
+      @include mq($screen-size) {
+        @each $size-name, $size-value in $size-map {
+          --fs-#{$size-name}: #{$size-value};
+        }
+      }
+    }
+  }
+}
