@@ -1,7 +1,7 @@
 @use '../abstract' as *;
 
 .card {
-  background-color: $clr-bg-card;
+  background-color: $card-backgroud;
 
   @include mq(small) {
     --padding: #{$container-min-margin-inline} * 2;
@@ -9,13 +9,13 @@
 
     width: min(100% - var(--padding, 1rem), var(--max-width));
     margin-inline: auto;
-    margin-block: $size-41;
-    padding: $size-20;
-    border-radius: $border-radius-2;
+    margin-block: $card-size-41;
+    padding: $card-padding;
+    border-radius: $card-radius-2;
   }
 
   &__header-wrapper, &__aside, &__section {
-    margin-inline: $size-16;
+    margin-inline: $card-size-16;
 
     @include mq(small) {
       margin-inline: 0;
@@ -25,60 +25,56 @@
 
   &__header {
     img {
-      min-height: $size-46;
+      min-height: $card-image-height-mobile;
       overflow: clip;
 
       @include mq(small) {
-        max-height: 300px;
-        border-radius: $border-radius-1;
+        max-height: $card-image-height-large;
+        border-radius: $card-radius-1;
       }
     }
 
 
     &-wrapper {
-      padding-block: $size-20 $size-17;
-
-      @include mq(small) {
-      
-      }
+      padding-block: $card-size-20 $card-size-17;
 
 
       h1 {
-        margin-bottom: $size-10;
-        font-size: $font-size-900;
-        font-family: $font-family-accent;
+        margin-bottom: $card-size-10;
+        font-size: $card-title-large;
+        font-family: $card-ff-accent;
         line-height: 1.1;
-        color: $clr-title;
+        color: $card-title-large-clr;
 
         @include mq(small) {
-          margin-bottom: $size-12;
+          margin-bottom: $card-size-12;
         }
       }
     }
   }
 
   &__aside {
-    background: $clr-neutral-200;
-    padding: $size-12 $size-13;
-    margin-bottom: $size-17;
-    border-radius: $border-radius-1;
+    background: $card-aside-bg;
+    padding: $card-size-12 $card-size-13;
+    margin-bottom: $card-size-17;
+    border-radius: $card-radius-1;
 
     h3 {
-      color: $clr-title-2;
-      font-size: $font-size-500;
+      color: $card-title-medium-clr;
+      font-size: $card-title-medium;
       line-height: 1;
       letter-spacing: 0.03em;
       font-weight: $font-weight-bold;
-      margin-bottom: $size-8;
+      margin-bottom: $card-size-8;
     }
 
     ul {
-      color: $clr-title-2;
+      color: $card-title-medium-clr;
     }
   }
 
   &__section {
-    padding-bottom: $size-16;
+    padding-bottom: $card-size-16;
 
     &:last-child {
       @include mq(small) {
@@ -87,15 +83,15 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: $size-17;
-      border-bottom: 1px solid $clr-line;
+      margin-bottom: $card-size-17;
+      border-bottom: $card-border-bottom;
     }
     h2 {
-      color: $clr-primary-100;
-      font-family: $font-family-accent;
-      font-size: $font-size-600;
+      color: $card-title-semi-large-clr;
+      font-family: $card-ff-accent;
+      font-size: $card-title-semi-large;
       line-height: 1.1;
-      padding-bottom: $size-12;
+      padding-bottom: $card-size-12;
     }
 
     &-ingredient {
@@ -105,18 +101,18 @@
     }
 
     p {
-      padding-bottom: $size-6;
+      padding-bottom: $card-size-6;
     }
 
     .even-columns {
       h4 {
-        padding-block: $size-6;
-        padding-left: $size-17;
+        padding-block: $card-size-6;
+        padding-left: $card-size-17;
       }
       p {
-        padding-block: $size-6;
+        padding-block: $card-size-6;
         font-weight: $font-weight-bold;
-        color: $clr-title-2;
+        color: $card-title-semi-large-clr;
       }
     }
   }

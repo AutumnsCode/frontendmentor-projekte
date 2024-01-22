@@ -23,18 +23,18 @@ main {
 ul, ol {
   margin-block: 0;
   padding: 0;
-  margin-left: $size-10;
-  color: $clr-primary-100;
+  margin-left: $list-size-medium;
+  color: $list-color;
   
   > li {
-      padding-left: $size-14;
+      padding-left: $list-size-large;
               
       &:not(:last-child) {
-        margin-bottom: $size-4;
+        margin-bottom: $list-size-small;
       }
     
       > span {
-        color: $clr-neutral-500;
+        color: $list-color-spam;
 
         &:first-child {
           font-weight: $font-weight-bold;
@@ -44,11 +44,3 @@ ul, ol {
   }
   
 }
-
-// a {
-//   color: $link-color;
-// }
-
-// a:is(:hover, :focus) {
-//   color: $link-color-hover;
-// }

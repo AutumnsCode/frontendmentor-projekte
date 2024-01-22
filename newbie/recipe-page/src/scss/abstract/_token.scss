@@ -34,22 +34,35 @@ $body-bg: $clr-bg-default;
 
 
 $card-backgroud: $clr-bg-card;
-// $link-color: $clr-interactive-text-default;
-// $link-color-hover: $clr-interactive-text-hover;
+$card-size-6: $size-6;
+$card-size-8: $size-8;
+$card-size-10: $size-10;
+$card-size-12: $size-12;
+$card-size-13: $size-13;
+$card-size-16: $size-16;
+$card-size-17: $size-17;
+$card-size-20: $size-20;
+$card-size-41: $size-41;
+$card-image-height-mobile: $size-46;
+$card-image-height-large: 18.75rem;
+$card-padding: $size-20;
+$card-radius-1: $border-radius-1;
+$card-radius-2: $border-radius-2;
+$card-title-large: $font-size-900;
+$card-title-semi-large: $font-size-600;
+$card-title-medium: $font-size-500;
+$card-title-large-clr: $clr-title;
+$card-title-semi-large-clr: $clr-title-3;
+$card-title-medium-clr: $clr-title-2;
+$card-aside-bg: $clr-bg-aside;
+$card-ff-accent: $font-family-accent;
+$card-border-bottom: 1px solid $clr-line;
 
-// // layout
-// $grid-gap: $size-8;
-// $flex-gap: $size-8;
+$list-size-small: $size-4;
+$list-size-medium: $size-10;
+$list-size-large: $size-14;
+$list-color: $clr-title-3;
+$list-color-spam: $clr-neutral-500;
 
 $container-min-margin-inline: $size-8;
 $container-max-width: 41rem;
-// $container-max-width-narrow: 40rem;
-// $container-max-width-wide: 75rem;
-
-//$content-max-width: 48rem;
-// $content-max-width-narrow: 40rem;
-// $content-max-width-wide: 75rem;
-
-// $breakout-max-width: 70rem;
-// $breakout-max-width-narrow: 50rem;
-// $content-max-width-wide: 85rem;
