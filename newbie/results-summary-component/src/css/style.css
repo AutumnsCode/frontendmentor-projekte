@@ -1,0 +1,130 @@
+
+
+
+:root {
+  --light-red: 0, 100%, 67%;
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /* background linear*/
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  /* circle linear*/
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(256, 72%, 46%, 0);
+
+  --white: hsl(0 0% 100%);
+  --pale-blue: hsl(221 100% 96%);
+  --light-lavender: hsl(241 100% 89%);
+  --dark-gray-blue: hsl(224 30% 27%);
+}
+@font-face {
+  font-family: 'HankenGrotesk';
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("ttf variations");
+  font-weight: 500,700, 800;
+}
+
+*, *::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  display: flex;
+  font-family: 'HankenGrotesk';
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+main {
+  overflow:hidden;
+  background: hsla(var(--white) 1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-container {
+  background-image: linear-gradient(to bottom, var(--light-royal-blue), var(--light-slate-blue));
+  color: var(--white);
+  border-radius: 0 0 1.925rem 1.925rem;
+  padding: 1.25rem 3.75rem 2.5rem;
+}
+
+.result-container h1 {
+  color: var(--light-lavender);
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.divider {
+  margin-inline: 0.5rem;
+  color: var(--light-lavender);
+}
+
+.result-container .circle{
+  width: max-content;
+  aspect-ratio: 1;
+  padding: 2rem 2rem 1rem;
+  border-radius: 50%;
+  margin-inline:auto;
+  text-align: center;
+  background-image: linear-gradient(to top, var(--persian-blue), var(--violet-blue));
+  margin-bottom: 1rem;
+}
+
+.final-result {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.total-value {
+  color: var(--light-lavender);
+  font-size: 0.875rem;
+}
+
+.comment-area {
+  text-align: center;
+}
+
+.comment-area h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.comment-area p {
+  color: var(--light-lavender);
+}
+
+.summary-container {
+  padding: 1.925rem;
+}
+
+.states {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.state {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: hsla(var(--light-red),0.125);
+  color: hsla(var(--light-red));
+}
+
+.state h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
