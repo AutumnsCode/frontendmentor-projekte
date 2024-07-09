@@ -17,35 +17,43 @@
   <script type="module" src="/src/js/main.js" defer></script>
 </head>
 <body>
-  <form>
-    <div>
-      <div class="form-group">
-        <label for="day">Day</label>
-        <input type="text" name="day" id="day" inputmode="numeric" pattern="[0-9]+" maxlength="2" placeholder="DD">
-        <p class="error" id="day-error"></p>
+  <main class="wrapper">
+    <section class="calculator">
+      <h2 class="sr-only">Calculator</h2>
+      <form class="form">
+        <div class="form-head" data-correct="true">
+          <div class="form-group">
+            <label for="day">Day</label>
+            <input type="text" name="day" id="day" inputmode="numeric" pattern="[0-9]+" maxlength="2" placeholder="DD" class="form-input">
+            <p class="error" id="day-error"></p>
+          </div>
+          <div class="form-group">
+            <label for="month">Month</label>
+            <input type="text" name="month" id="month" inputmode="numeric" pattern="[0-9]+" maxlength="2" placeholder="MM" class="form-input">
+            <p class="error" id="month-error"></p>
+          </div>
+          <div class="form-group">
+            <label for="year">Year</label>
+            <input type="text" name="year" id="year" inputmode="numeric" pattern="[0-9]+" maxlength="4" placeholder="YYYY" class="form-input">
+            <p class="error" id="year-error"></p>
+          </div>
+        </div>
+        <div class="form-container">
+          <button type="button" id="form-btn" class="btn">
+            <span class="sr-only">Click me to find out</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+          </button>
+        </div>
+    
+      </form>
+    
+      <div class="output container">
+        <p class="output-number" id="output-year"><span class="output-num">--</span> <span class="output-desc">years</span></p>
+        <p class="output-number" id="output-month"><span class="output-num">--</span> <span class="output-desc">months</span></p>
+        <p class="output-number" id="output-day"><span class="output-num">--</span> <span class="output-desc">days</span></p>
       </div>
-      <div class="form-group">
-        <label for="month">Month</label>
-        <input type="text" name="month" id="month" inputmode="numeric" pattern="[0-9]+" maxlength="2" placeholder="MM">
-        <p class="error" id="month-error"></p>
-      </div>
-      <div class="form-group">
-        <label for="year">Year</label>
-        <input type="text" name="year" id="year" inputmode="numeric" pattern="[0-9]+" maxlength="4" placeholder="YYYY">
-        <p class="error" id="year-error"></p>
-      </div>
-    </div>
-    <div>
-      <button type="button" id="form-btn">Click me</button>
-    </div>
-
-  </form>
-
-  <div class="output container">
-    <p class="output-number" id="output-year"><span class="output-num">--</span> <span class="output-desc">years</span></p>
-    <p class="output-number" id="output-month"><span class="output-num">--</span> <span class="output-desc">months</span></p>
-    <p class="output-number" id="output-day"><span class="output-num">--</span> <span class="output-desc">days</span></p>
-  </div>
+    </section>
+  </main>
   <!-- Day
   DD
 
