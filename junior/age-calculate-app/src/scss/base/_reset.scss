@@ -1,0 +1,29 @@
+
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+button, input {
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: inherit;
+}
+
+ul {
+  list-style: none;
+}

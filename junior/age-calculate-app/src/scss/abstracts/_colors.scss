@@ -1,0 +1,25 @@
+$-clr-white: hsl(0 0% 100%);
+$-clr-purple: hsl(259, 100%, 65%) ;
+$-clr-red: hsl(0, 100%, 67%);
+$-clr-offwhite: hsl(0, 0%, 94%);
+$-clr-light-grey: hsl(0, 0%, 86%);
+$-clr-smokey-grey: hsl(0, 1%, 44%);
+$-clr-offblack: hsl(0, 0%, 8%);
+
+$default: (
+  "primary": $-clr-white,
+  "background": $-clr-offwhite,
+  "border": $-clr-light-grey,
+  "base": $-clr-smokey-grey,
+  "heading": $-clr-offblack,
+  "accent": $-clr-purple,
+  "error": $-clr-red
+);
+
+$clr-primary: var(--clr-primary);
+$clr-background: var(--clr-background);
+$clr-border: var(--clr-border);
+$clr-base: var(--clr-base);
+$clr-heading: var(--clr-heading);
+$clr-accent: var(--clr-accent);
+$clr-error: var(--clr-error);

@@ -1,0 +1,28 @@
+@use 'colors' as *;
+@use 'font-size' as *;
+@use 'spacing' as *;
+
+$active-theme: $default;
+
+$clr-text-default: $clr-base;
+$clr-bg-default: $clr-primary;
+$clr-inter-text-placeholder: $clr-text-default;
+$clr-inter-text-active: $clr-heading;
+$clr-output: $clr-heading;
+$clr-result: $clr-accent;
+$clr-error: $clr-error;
+
+$letter-spacing: $size-1;
+
+$radius-small: $size-8;
+$radius-medium: $size-18;
+$radius-big: $size-19;
+
+$body-ff: $ff-base;
+$body-fz: $fz-300;
+$body-fw: $fw-default;
+$body-style: normal;
+$body-bg: $clr-background;
+$body-color: $clr-text-default;
+
+$max-width: 52.5rem;
